@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；-->
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
+<title>广州驾驶证约考中心</title>
+<link href="css/stylehjs.css" rel="stylesheet" type="text/css" />
+<style>
+.pin4{ width:100%; height:92px; margin-bottom:160px; position:relative;}
+.p17-lun{
+
+	width:70%;
+	height:190px;
+	position:absolute;
+	left:15%;
+	right:15%;
+	top:35%;
+	padding:5px 0;
+	/*border:2px solid #5075c6;*/
+	overflow:hidden;
+}
+#demo{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#demo li{
+	width:100%;
+	color:#5075c6;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+}
+
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/maydate.js"></script>
+<!--<script type="text/javascript">
+		    $(window).load(function(){
+		    	$("#loading").fadeOut(300);
+		    })
+</script>-->
+<script src="js/jquery-1.7.2.min.js"></script>
+<!--<script src="js/flexible_css_js.js"></script>-->
+<!--<script src="js/fastclick.js"></script>-->
+<script src="js/jquery-3.1.1.min.js"></script>
+
+
+</head>
+<body>
+<div class="nav" style="top:0;background: #1a4188;">
+    <ul>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" >学车费用</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" >0元试学</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" >取证时间</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" >新生减免政策</li>
+    </ul>
+</div>
+<!--div class="nav">
+    <ul>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" data-toggle="modal" data-target=".zx">学车费用</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" data-toggle="modal" data-target=".zx">75天取证申请</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" data-toggle="modal" data-target=".zx">最新政策</li>
+        <li onclick="doyoo.util.openChat('g=10069759');return false;" data-toggle="modal" data-target=".zx">新生减免政策</li>
+    </ul>
+</div -->
+<!--红包 开始-->
+    <div class="popup" style="z-index:9999999999999; display:none;">
+        <div class="popup-img">
+            <img src="images/t_02.png" alt="" style="width:100%;" class="imgtc">
+
+            <div class="popup-phone">
+                <input  class="popup-phone-input" name="phone" type="text" placeholder="请输入手机号码">
+                <div>
+                    <a href="javascript:;" class="popup-btn btn-phone-submit">
+                    	领学车券
+                	</a>
+                	<!--<p class="text-center fs-12 fc-white">最后49张，本周日截止</p>-->
+                </div>
+            </div>
+            <div class="popup-colse-btn close-btn">
+                <img src="images/close.png" alt="">
+            </div>
+        </div>
+    </div>
+<!--红包 结束-->
+<!--<div id="loading">
+ <div class="spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+ </div>
+</div>-->
+<section class="part1" style="margin-top:45px;">
+ <figure class="logo">
+  <img src="images/logowhite.png" />
+ </figure>
+ <h1>考驾照·首选YY驾校</h1>
+ <div class="line"></div>
+ <h2>C1驾驶证*C2驾驶证</h2>
+ <ul class="evidence"> 
+  <ul class="evidence"> 
+  <li><span class="icon1"></span>清远特快班，助你快速拿证</li>
+  <li><span class="icon2"></span>首付只需380元，轻松考驾照</li>
+  <li><span class="icon3"></span>平安保险承保，不过立赔5000元</li>
+ </ul> 
+ </ul>
+ <div class="deadline">
+  <h3>前100名可免费领取600元代金券</h3>
+  <div class="deadline-box">
+   <div class="month-box curMonth"></div>
+   <p class="month-text">月</p>
+   <div class="day-box curDate"></div>
+   <p class="day-text">日</p>
+   <div class="clear"></div>
+  </div>
+ </div>
+ <a class="btn" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">免费领取</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+</section>
+<section class="arrow-down">
+</section>
+<section class="part2">
+ <p class="notice-title">考生公告</p>
+ <div class="notice-box">
+  <ul>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">开始实行改革：限制拿证周期，据车管所数据统计，广州16年驾考平均拿证时间为1.5年，平均拿证花费1万。现在YY报考学车，<span style="color:#EC0003;">75天内取证，价格全市至低价</span></a></li>
+
+  </ul>
+ </div>
+ <a class="btn" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">了解详情</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+</section>
+<section class="arrow-down">
+</section>
+<div style="max-width:640px; margin:auto;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">
+	<img src="images/dfg_01.jpg" width="100%" />
+    <img src="images/dfg_02.jpg" width="100%" />
+</div>
+<a class="btn" style="margin-top:0;" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">申请免费试驾</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+<section class="arrow-down">
+</section>
+<div style="max-width:640px; margin:auto;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">
+	<img src="images/bz_01.jpg" width="100%" />
+    <img src="images/bz_02.jpg" width="100%" />
+    <img src="images/bz_03.jpg" width="100%" />
+</div>
+<a class="btn" style="margin-top:10px;" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">更多服务</a>
+ <p class="note" style="margin-bottom:10px;">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+<section class="arrow-down">
+</section>
+<div style="max-width:640px; margin:auto;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">
+	<img src="images/page4-big3_01.jpg" width="100%" />
+    <img src="images/page4-big3_02.jpg" width="100%" />
+    <img src="images/page4-big3_03.jpg" width="100%" />
+</div>
+<a class="btn" style="margin-top:10px;" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">了解详情</a>
+<p class="note" style="margin-bottom:10px;">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+<!--咨询更多问题-->
+<section class="arrow-down">
+</section>
+<section class="part4">
+ <h4>考驾照常见问题</h4>
+ <div class="questions-box">
+  <ul class="questions">
+   <li style="border-top: 1px dashed #d7d7d7;"><a href="#">YY学车的费用是多少?</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">报名后多久拿证?通过率怎么样？</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">长途会额外收费吗？</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">教练任意选任意换是真的吗？</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">残疾人可以考C1/C2驾照吗？</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">视力有问题可以考驾照吗？</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">听说在线预约有减免部分学费吗？</a></li>
+  </ul>
+  <ul class="questions-btn">
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+   <li><a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">查看答案</a></li>
+  </ul>
+  <div class="clear"></div>
+ </div>
+ <a class="btn" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;">咨询更多问题</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+</section>
+<section class="arrow-down" style=" margin-top:20px;">
+</section>
+ <!--轮播开始-->
+<h2 style="text-align:center; color:#333; font-size:2.3rem; margin-bottom:20px; margin-top:30px;">24小时随时随地约练车<br/>还有机会1人1车练习</h2>
+<div class="box">
+    <ul>
+        <li class="special">
+            <img src="images/liucheng1.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+        <li class="special">
+            <img src="images/liucheng2.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+        <li class="special">
+            <img src="images/liucheng3.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+        <li class="special">
+            <img src="images/liucheng4.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+        <li class="special">
+            <img src="images/liucheng5.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+        <li class="special">
+            <img src="images/liucheng6.png" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank"/>
+        </li>
+    </ul>
+    <div class="btn2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<div style=" clear:both;"></div>
+<!--轮播结束-->
+ <a class="btn" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">点击咨询预约练车</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+<section class="arrow-down" style="margin:30px auto;">
+</section>
+<!--<section class="part3">
+ <h4 style="margin-bottom:15px;">1分钟解决练车问题</h4>
+<img src="images/liucheng_01.jpg" width="100%;" />
+<img src="images/liucheng_02.jpg" width="100%;" />
+<img src="images/liucheng_03.jpg" width="100%;" />
+<img src="images/liucheng_04.jpg" width="100%;" />
+<a class="btn" href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">点击咨询预约练车</a>
+ <p class="note">*2017年<span class="curMonth"></span>月<span class="curDate"></span>日18:00截止*</p>
+</section>-->
+<div style="padding-bottom:100px;">
+	<h2 style="color:#333; font-weight:bold; font-size:26px;">YY学车联合平安保险推出</h2>
+    <p style="font-size:20px; margin:10px 0;">学车补贴“新手司机计划”</p>
+    <p style=" font-size:20px; margin:10px 0 0 0;">本周优惠￥1000</p>
+    <p style=" font-size:14px; margin:10px 0 0 0; color:#E80003;">限广州市30个名额,机会只剩<span style="display:inline-block; margin:0 5px; line-height:30px; text-align:center; width:30px; height:30px; border:1px solid #E80003; font-weight:bold;">23</span>个</p>
+    <!--滚动-->
+    <div class="pin4">
+    <div class="p17-lun">
+            <div id="demo">
+                <ul id="demo1">
+                    <li>188****1406 已领取</li>
+                    <li>188****2398 已领取</li>
+                    <li>134****2623 已领取</li>
+                    <li>185****9930 已领取</li>
+                    <li>143****7943 已领取</li>
+                    <li>185****1817 已领取</li>
+                    <li>135****5679 已领取</li>
+                    <li>134****6348 已领取</li>
+                    <li>188****8523 已领取</li>
+                    <li>156****2700 已领取</li>
+                    <li>153****2032 已领取</li>
+                    <li>188****1406 已领取</li>
+                    <li>188****2398 已领取</li>
+                    <li>134****2623 已领取</li>
+                    <li>185****9930 已领取</li>
+                    <li>143****7943 已领取</li>
+                    <li>185****1817 已领取</li>
+                    <li>135****5679 已领取</li>
+                    <li>134****6348 已领取</li>
+                    <li>188****8523 已领取</li>
+                    <li>156****2700 已领取</li>
+                    <li>153****2032 已领取</li>
+                    <li>188****1406 已领取</li>
+                    <li>188****2398 已领取</li>
+                    <li>134****2623 已领取</li>
+                    <li>185****9930 已领取</li>
+                    <li>143****7943 已领取</li>
+                    <li>185****1817 已领取</li>
+                    <li>135****5679 已领取</li>
+                    <li>134****6348 已领取</li>
+                    <li>188****8523 已领取</li>
+                    <li>156****2700 已领取</li>
+                    <li>153****2032 已领取</li>
+                    <li>185****1817 已领取</li>
+                    <li>135****5679 已领取</li>
+                    <li>134****6348 已领取</li>
+                    <li>188****8523 已领取</li>
+                    <li>156****2700 已领取</li>
+                    <li>153****2032 已领取</li>
+                    <li>188****1406 已领取</li>
+                    <li>188****2398 已领取</li>
+                    <li>134****2623 已领取</li>
+                    <li>185****9930 已领取</li>
+                    <li>143****7943 已领取</li>
+                    <li>185****1817 已领取</li>
+                    <li>135****5679 已领取</li>
+                    <li>134****6348 已领取</li>
+                </ul>
+                <ul id="demo2"></ul>
+            </div>
+
+    </div>
+    <!--滚动-->
+</div>
+<!--<div class="popup-phone">
+    <input  class="popup-phone-input" name="phone" type="text" placeholder="请输入手机号码">
+    <div>
+        <a href="javascript:;" class="popup-btn btn-phone-submit">
+            领学车券
+        </a>
+        <p class="text-center fs-12 fc-white">最后49张，本周日截止</p>
+    </div>
+</div>-->
+ <div class="popup-phone" style=" width:80%; margin:0 auto;">
+    <input type="tel" name="phone" class="form-control"  placeholder="请输入您的手机号码" id="qq5" style="color:#333; display:block;width:87%;height:3.4rem;margin:0 auto;margin-top:40px;border-radius:3px;background:#fff;font-size:1.3rem;line-height:3.4rem; border:1px solid #5075c6;"/>
+    <div>
+    <a href="javascript:;" class="btn btn-phone-submit"  style="text-align:center;" >申领优惠</a>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+        $(function () {
+            demoScoll();
+        })
+        function demoScoll() {
+            var speed = 40
+            demo2.innerHTML = demo1.innerHTML//克隆demo1为demo2
+            function Marquee() {
+                if (demo2.offsetHeight - demo.scrollTop <= 0)//当滚动至demo1与demo2交界时
+                    demo.scrollTop -= demo1.offsetHeight//demo跳到最顶端
+                else {
+                    demo.scrollTop++  //如果是横向的 将 所有的 height top 改成 width left
+                }
+            }
+            var MyMar = setInterval(Marquee, speed)//设置定时器
+            //demo.onmouseover = function() { clearInterval(MyMar) } //鼠标移上时清除定时器达到滚动停止的目的
+            //demo.onmouseout = function() { MyMar = setInterval(Marquee, speed) } //鼠标移开时重设定时器
+        }
+</script>
+
+<div class="icon-arrow-up" data-type="arrow">
+ <i class="ani-up1"></i>
+</div>
+ 
+<!--底部悬浮-->
+		<div class="login_panel">
+			<div class="panel_center">
+				<div id="scroll_question">
+					<ul>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">首付380元即可学车？</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">费用全包是真的？通过率超高？</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">上班族如何快速拿到驾照？</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">练车场地在哪里？</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">教练不满还能换？</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank">最快30天取证？</a>
+						</li>                     
+						
+					</ul>
+				</div>
+				<!--<p><a href="javascript:void(0);" onclick="showLoginOnly(true);" class="close">我知道了...</a></p>-->
+				<a href="javascript:;" onclick="doyoo.util.openChat('g=10069759');return false;" target="_blank" class="askfor">点我问问题</a>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+ <!--轮播-->
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/swipeslide.js" type="text/javascript"></script>
+<script src="js/mainhh.js" type="text/javascript"></script>
+<!--轮播-->
+<!--轮播js 开始-->
+<script>
+	$(".box").swipeSlide({
+		continuousScroll:true,
+		speed : 1000,
+		// axisX:false,
+		transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+		callback : function(i){
+			$('.btn2').children().eq(i).addClass('special').siblings().removeClass('special');
+		}
+	})
+</script>
+<!--轮播js 结束-->
+<!--底部悬浮结束-->
+<script language="javascript">
+	var box = document.getElementById("scroll_question"),
+		can = true;
+	box.innerHTML += box.innerHTML;
+	box.onmouseover = function() { can = false };
+	box.onmouseout = function() { can = true };
+	new function() {
+		var stop = box.scrollTop % 40 == 0 && !can;
+		if(!stop) box.scrollTop == parseInt(box.scrollHeight / 2) ? box.scrollTop = 0 : box.scrollTop++;
+		setTimeout(arguments.callee, box.scrollTop % 40 ? 10 : 1000);
+	};
+</script>
+<script language="javascript" type="text/javascript">
+	$(window).scroll(function () {
+		if ($(document).scrollTop() + $(window).height() >= $(document).height()) {
+			$('.icon-arrow-up').fadeOut(300)
+		}
+		else {$('.icon-arrow-up').fadeIn(300)}
+	});
+</script>
+
+<script type="text/javascript">
+window._pt_lt = new Date().getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push('setAccount,7fec6976');
+var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+(function() {
+var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+atag.src = _protocol + 'js.ptengine.cn/7fec6976.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(atag, s);
+})();
+</script>
+<script>
+function tb() {
+	timerB = setInterval(function () {
+		$(".popup").show();
+		clearInterval(timerB);
+	}, 30000);
+	}
+	$(".close-btn").on("click", function () {
+		$(".popup").hide();
+		tb();
+	});
+	timer = setTimeout(function () {
+		$(".popup").show();
+	}, 5000);
+
+
+</script>
+<!--红包弹出js 结束-->
+
+<script type="text/javascript" charset="utf-8" src="https://gate.soperson.com/20002437/10073658.js"></script>
+</body>
+</html>

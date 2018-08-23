@@ -1,0 +1,333 @@
+body{
+	
+	width:100%; background: #e7e6e6;
+	
+}
+
+.blank5 {clear: both; height: 5px; overflow: hidden;}
+.blank50 {clear: both; height: 50px; overflow: hidden;}
+.blank10 {clear: both; height: 10px; overflow: hidden;}
+.blank30 {clear: both; height: 30px; overflow: hidden;}
+.input_2 {width:170px; height:20px; text-align-last: center;line-height:20px;font-size:12px; color: #949292; box-shadow: inset 0 2px 2px #ccc; border: 0; margin: 0 auto; padding: 0 0 0 10px;}
+.blue {color: #2260ee;}
+.block_100 {display: block; width: 100%; height: auto;}
+
+
+.hide{ display:none;}
+
+.page{
+	width:100%;
+/*
+	height:100%;
+	position:absolute;
+*/
+	font-size:12px;
+	text-align:center;
+}
+
+.page .wrap{
+	
+}
+
+.page-1-1{}
+.page-2-1{}
+.page-3-1{}
+.page-4-1{}
+.page-5-1{}
+
+.page-current{
+	z-index:1;
+}
+
+.page-1-1 .img_0 {
+	height:auto;width:100%;display: block;
+}
+.page-1-1 .con_1 {
+	height:auto;width:100%;clear: both;background: url(../img/img1_2.jpg) repeat-y #34aed8; background-size: contain;
+}
+.page-1-1 .img_2 {
+	height:auto;width:100%;display: block;
+}
+.page-1-1 .img_3 {
+	height:auto;width:100%;
+}
+.page-2-1 .img_1 {
+	height:auto;width:100%; display: block;
+}
+.page-2-1 .img_2 {
+	height:auto;width:252px;
+	position:absolute;
+	left:50%;
+	top:30%;
+	margin-left:-126px;
+}
+.page-2-1 .img_3 {
+	height:auto;width:100%;
+}
+.page-2-1 .img_5 {
+	height:auto;width:252px;
+	position:absolute;
+	left:50%;
+	top:30%;
+	margin-left:-126px;
+}
+
+.bd{width:100%; clear: both;}
+.bd form{padding:0 0 0 0px;margin:0 0;}
+.input_box {width: 245px; height: 37px; font-size:14px; line-height:37px; border: 2px solid #020202; margin: 0 auto; text-align:center; background:#e7e6e6; clear: both;}
+.input_box_left {width: 50px; height: 37px; line-height: 37px; float: left; font-size: 16px; color: #020202; text-align: center; font-weight: bold;}
+
+.title1 {height: 46px; clear: both; overflow: hidden; text-align: center; font-size: 16px; line-height: 40px; color: #020202; font-weight: bold;}
+.title2 {width:100%;margin:0px auto;height: 66px; text-indent: 10px; font-size: 18px; line-height: 30px; clear: both; overflow: hidden; text-align: left;}
+
+.buycar_table {margin: 0 auto;}
+ .input_l {width:245px; height:37px; line-height:37px;font-size:14px; background: #fff; color: #949292; border: 0; margin-top: 0; padding: 0 0 0 0; text-align:center; display: block;}
+.submitbtn{ border-radius:0;height:40px; border: 1px solid #ff0c0c; text-align: center; line-height:40px;font-size:16px; width: 248px; color: #ff0c0c;background:#ffd7d7; padding: 0; font-family: "Microsoft Yahei","微软雅黑"; cursor: pointer; margin: 0 auto 0 auto; display: block; }
+.submitbtn:hover{background:#f60; color: #fff;}
+#guestbook_2 .buycar_table .input_l {background: #ffde00; color: #222;}
+#guestbook_2 .buycar_table .input_l::-webkit-input-placeholder { /* WebKit browsers */color:#333;}
+#guestbook_2 .buycar_table .input_l::-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#333;}
+#guestbook_2 .buycar_table .input_l::-moz-placeholder { /* Mozilla Firefox 19+ */color:#333;}
+#guestbook_2 .buycar_table .input_l::-ms-input-placeholder { /* Internet Explorer 10+ */color:#333;}
+#guestbook_2 .buycar_table .submitbtn{ color: #000;background:#fff;}
+#guestbook_2 .buycar_table .submitbtn:hover{background:#f60; color: #fff;}
+
+.haochu_list {width: 100%; padding-top: 15px; margin: 0 auto;}
+.haochu_list dl {width: 33.33%; display: block; float: left;}
+.haochu_list dl dt {clear: both;}
+.haochu_list dl dt img {display: block; width: 90%; height: auto; margin: 0 auto;}
+.haochu_list dl dd {font-size: 14px; line-height: 20px; text-align: center; padding-top: 10px;}
+.why_list {width: 100%; padding-top: 15px; margin: 0 auto;}
+.why_list dl {clear: both;}
+.why_list dl dt { width: 50%; float: left;}
+.why_list dl dt.f_right {float: right;}
+.why_list dl dt img {display: block; width: 100%; height: auto;}
+.why_list dl dd {font-size: 14px;display: block; width:42%; float: left; line-height: 20px; text-align: center; padding-top: 10px;}
+.why_list dl dd .title_sec {clear: both; text-align: center; font-size: 17px; color: #de4b23; line-height: 20px;}
+
+.shengxia {clear: both; padding-bottom: 80px; overflow: hidden; background: url(../img/shengxia.jpg) top no-repeat; background-size: cover;}
+.shengxia_main {width:220px; padding:302px 0 0 0; clear: both; margin: 0 auto; text-align: left;}
+.shengxia_main p {padding: 3px 0; color: #000; font-size: 10px; line-height: 14px;}
+
+.con2 {width:100%; clear: both; margin: 10px auto 0 auto; overflow: hidden; background: #f3f1f2;}
+.con2 ul {padding: 10px 0 0 5px;}
+.con2 li {width:170px; height: 183px; float: left;}
+.con2 li span.box {width:130px; height: 158px; text-align: left; border: 4px solid #e3e1e2; border-radius: 5px; float: left;display: block; font-size: 12px; color: #666666; line-height: 16px; margin: 5px 0 0 5px; background: #f4e827; border-radius: 2px;/* box-shadow: 0 0 20px #ccc;*/ position: relative; padding: 10px 11px 0 11px;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-ms-transition:0.5s all ease;-o-transition:0.5s all ease;transition:0.5s all ease;}
+.con2 li span.box p {padding:2px 0 ;}
+.con2 li span.box::before {content:"";display: block; width: 10px; height: 10px; background: #f4e827; border: 5px solid #fff; box-shadow: 0 0 10px #ccc; border-radius: 50%; position: absolute; top: 0; left: 50%; margin-left: -10px; margin-top: -10px;}
+
+.xie_baidu {}
+.xie_baidu_con_1 {width: 100%; background: #f3f1f2; background-size: cover;}
+.xie_baidu_con_left {width: 300px; margin: 0 auto; font-size: 25px; line-height: 40px; color: #515151; padding: 17px 0 0 35px; clear: both; background: #eae5e8;}
+.xie_baidu_con_right {width: 330px; background: #eae5e8; box-shadow: 0 3px 6px rgba(0,0,0,0.3); margin: 0 auto; font-size: 25px; line-height: 40px; color: #515151; padding: 0 0 0 0; clear: both;}
+.xie_baidu_con_right img {width: 100%; display: block;}
+.xie_baidu_con_2 {width: 100%; background: #f3f1f2;}
+.xie_baidu_con_left strong {color: #eb5e00;}
+.xie_baidu_btn {width: 328px; height: 64px; margin: 0 auto;}
+.xie_baidu_btn img {width: 328px; height: 64px; display: block;}
+.xie_baidu_btn a:hover img {opacity: 0.7;}
+
+.pop_bg {position:fixed; z-index: 8888; background: rgba(0,0,0,0.75); top: 0; left: 0; right: 0; bottom: 0; display: none;}
+.pop1_box {width: 340px; height: 189px; z-index: 9999; position: fixed; top: 0; background: url(../img/pop1_bg.png) no-repeat; display: none;}
+.pop1_box .pop1_blank1 {height: 154px; clear: both;}
+.pop1_box .pop1_close {width: 25px; height: 25px; float: right; margin: 7px 12px 0 0;}
+.pop1_box .pop1_close img {display: block;}
+.pop1_box .pop1_close:hover img {opacity: 0.7;}
+.pop1_box .pop1_input_box {width: 171px; height: 40px; padding: 0 20px; float: left;}
+.pop1_box .pop1_input_box input {width: 169px; height: 35px; border: 1px solid #fff; text-align: center; line-height: 35px; font-size: 14px; color: #333; -webkit-appearance: none;}
+.pop1_box .pop1_butt_box {width: 105px; height: 28px; float: left;}
+.pop1_box .pop1_butt_box input {width: 105px; height: 28px; border: 0; padding: 0; margin: 0}
+
+
+#go-top {width: 40px; height: 40px; display: none;position: fixed; right: 20px; bottom: 60px; box-shadow: 0 3px 8px rgba(0,0,0,0.2)}
+#go-top img {width: 40px; height: 40px; display: block;}
+#go-top a:hover img {opacity: 0.8;}
+
+.page-3-1 .img_1 {
+	height:auto;width:100%; display: block;
+}
+.page-3-1 .img_2 {
+	height:auto;width:252px;
+	position:absolute;
+	left:50%;
+	top:5%;
+	margin-left:-126px;
+}
+.page-3-1 .img_3 {
+	height:auto;width:252px;
+	position:absolute;
+	left:50%;
+	top:5%;
+	margin-left:-126px;
+}
+.con_form2 {width:360px;height: 67px; padding-top: 86px; clear: both; overflow: hidden; background: url(../img/con_form2.jpg) center top no-repeat; background-size: cover;}
+.page-4-1 .img_1 {
+	height:auto;width:320px;
+	position:absolute;
+	left:50%;
+	top:62%;
+	margin-left:-160px;
+	z-index:2;
+}
+.page-4-1 .img_2 {
+	height:auto;width:100%;display: block;
+}
+.page-4-1 .img_3 {
+	height:auto;width:252px;
+	position:absolute;
+	left:50%;
+	top:5%;
+	margin-left:-126px;
+}
+.page-5-1 .img_1 {
+	height:auto;width:100%; display: block;
+}
+.page-5-1 .img_2 {
+	height:auto;width:320px;
+	position:absolute;
+	left:50%;
+	top:5%;
+	margin-left:-160px;
+}
+.page-5-1 .img_3 {
+	height:auto;width:320px;
+	position:absolute;
+	left:50%;
+	top:5%;
+	margin-left:-160px;
+}
+.page-5-1 .img_4 {
+	height:auto;width:25px;
+	position:absolute;
+	left:50%;
+	top:92%;
+	margin-left:-12px;
+}
+.page-6-1 .img_1 {
+	height:auto;width:100%;display: block;
+}
+
+/*** Overall MovingBoxes Slider ***/
+.mb-wrapper {
+	margin: 0 auto;
+	width: 340px;
+	position: relative;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+/* Panel Wrapper */
+.mb-slider, .mb-scroll {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	left: 0;
+	top: 0;
+
+	/***(>'-')> Control Panel Font size here <('-'<)***/
+	font-size: 12px;
+}
+
+/* active slider border highlight */
+.mb-active-slider {
+	border-color: #333;
+}
+
+/*** Slider panel ***/
+.mb-slider .mb-panel {
+	padding-top: 15px;
+	margin: 0;
+	display: block;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+
+/* Cursor to arrow over current panel, pointer for all others,
+change .current class name using plugin option, currentPanel : 'current' */
+.mb-slider .mb-panel.current {
+	cursor: auto;
+	padding-top: 0;
+	-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-ms-transition:0.5s all ease;-o-transition:0.5s all ease;transition:0.5s all ease;
+}
+
+/*** Inside the panel ***/
+
+.mb-inside * {
+	max-width: 100%;
+}
+
+/*** Left & Right Navigation Arrows ***/
+a.mb-scrollButtons {
+	display: block;
+	width: 45px;
+	height: 58px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	margin-top: -29px; /* if you change the arrow images, you may have to adjust this (1/2 height of arrow image) */
+	cursor: pointer;
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+}
+a.mb-scrollButtons.mb-left {
+	background-position: left top;
+	left: -45px;
+	display: none;
+}
+a.mb-scrollButtons.mb-right {
+	background-position: right top;
+	right: -45px;
+	display: none;
+}
+a.mb-scrollButtons.mb-left:hover {
+	background-position: left bottom;
+}
+a.mb-scrollButtons.mb-right:hover {
+	background-position: right bottom;
+}
+a.mb-scrollButtons.disabled {
+	display: none;
+}
+
+/*** Controls added below the panels ***/
+.mb-controls {
+	padding-top: 0;
+	margin:-10px auto 0 auto;
+	text-align: center;
+	position: relative;
+/*	z-index: 100;*/
+}
+.mb-controls a {
+	display: inline-block;
+	text-decoration: none;
+	line-height: 10px;
+	border-radius: 5px;
+	margin: 0 15px 0 15px;
+	text-align: center;
+	outline: 0;
+	 width:50px;
+	background: #727171;
+}
+.mb-controls a.current {
+	background: #f4e827;
+}
+
+/*弹窗样式*/
+img{display:block;}
+.smallcantc{display:none;width:100%;height:100%; background:rgba(0,0,0,0.5); position:fixed; top :0; z-index:99999999999999999;left:0;}
+.mail_wrap{ position:relative; top:50%; left:50%;width:300px; height:380px; margin-top:-190px; margin-left:-150px;background:url(../images/t_02js.png) no-repeat center;z-index:999999999999999;}
+.mail_wrap p{    width: 320px;height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: -30px;}
+em{ width:50px; height:50px; position:absolute; top:27px; right:-15px; background:url(../images/closejs.png) no-repeat}
+#messageForm3{ position:absolute; top:73%; width:90%; left:5%; right:5%;}
+#messageForm3 .form-control{ padding-left:5%; margin-right:10px; height:35px; margin-left:5%; line-height:35px; width:90%; border-radius:2px; background:#ededed; border:none; font-size:18px;}
+#messageForm3 .btntj{height:35px; line-height:35px; width:95%; margin-left:5%; border-radius:3px; background:#f54014; font-size:18px; margin-top:5px; color:#fff; border:none;}
+

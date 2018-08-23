@@ -1,0 +1,181 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="wap-font-scale" content="no">
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>悦悦学车网—广州大型驾考合作平台</title>
+    <script type="text/javascript" src="js/flexible.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/zepto.fullpage.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5fca52f19badc52a9dec56c17170943d";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="">
+<div class="popup">
+    <div class="popup-img">
+        <img src="./images/t_02.png" alt="">
+        <div class="popup-phone">
+            <input class="popup-phone-input" name="phone" type="text" placeholder="请输入手机号码">
+            <div>
+                <a href="javascript:;" class="popup-btn btn-phone-submit">
+                    领学车券
+                </a>
+            </div>
+        </div>
+        <div class="popup-colse-btn close-btn">
+            <img src="./images/close.png" alt="">
+        </div>
+    </div>
+    
+</div>
+
+	<div class="wp">
+        <div class="wp-inner">
+            <div class="page page1">
+                <img src="images/page1-top.png" class="mar-lr-auto page1-top">
+            	<div class="center-box">
+            		<input type="tel" name="phone" placeholder="输入手机号码领取优惠券" class="mar-lr-auto form-control">
+            		<div>
+	            		<a href="javascript:;" class="mar-lr-auto btn btn-receive btn-phone-submit"></a>
+	            		<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="mar-lr-auto btn btn-advisory"></a>
+            		</div>
+            	</div>
+            </div>
+            <div class="page page2">
+            	<div class="pos-abo center-box">
+            		<img src="images/page2-top.png" class="mar-lr-auto page2-top">
+            		<div class="mar-lr-auto countdown-box">
+            			<div class="pos-abo countDown clear">
+							<span class="pull-left d" id="RemainD">00</span>
+							<span class="pull-left h" id="RemainH">00</span>
+							<span class="pull-left m" id="RemainM">00</span>
+							<span class="pull-left s" id="RemainS">00</span>
+            			</div>
+            		</div>
+            		<img src="images/page2-font.png" class="mar-lr-auto page2-font">
+                    <img src="images/page2-center.png" class="mar-lr-auto page2-center">
+            		<!-- <img src="images/page2-bottom.png" class="mar-lr-auto page2-bottom"> -->
+            		<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="mar-t-20 mar-lr-auto btn-knowmore"></a>
+            	</div>
+            </div>
+            <div class="page page3">
+            	<div class="page3-bg"></div>
+            	<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="mar-lr-auto btn-online"></a>
+            </div>
+            <div class="page page4">
+            	<div class="page4-bg2"></div>
+            </div>
+            <div class="page page5">
+            	<div class="page5-big"></div>
+            	<div class="pos-abo page5-btn">
+            		<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="mar-lr-auto btn-advisory-red"></a>
+            	</div>
+            </div>
+            <div class="page page6">
+            <div class="page6-big"></div>
+            	<div>
+            		<input type="tel" name="phone" placeholder="请输入手机号码" class="mar-lr-auto form-control">
+            		<div>
+	            		<a href="javascript:;" class="mar-lr-auto btn-receive btn-receive-package btn-phone-submit"></a>
+            		</div>
+            	</div>
+            	<p class="copyright">版权所有@广州贝斯达驾驶培训有限公司</p>
+            </div>
+        </div>
+    </div>
+    <span class="start"><b></b></span>
+    <div class="fix-right hide">
+    	<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="btn">
+    		<!-- <span>2</span> -->
+    	</a>
+    	<!--<a href="javascript:;" class="btn btn-bomb"></a>-->
+        <a href="tel:4008678067" class="btn"></a>
+    	<!--<a href="javascript:;" class="btn"></a>-->
+    </div>
+    <div class="fix-bottom clear">
+    	<a href="javascript:;" class="pull-left btn btn-apply btn-bomb"></a>
+    	<a href="javascript:;" onClick="openZoosUrl('chatwin');" class="pull-left btn btn-reserve"></a>
+    </div>
+    <div class="wrapper hide">
+    	<div class="wrapper-box">
+    		<input type="tel" name="phone" placeholder="请输入手机号码" class="mar-lr-auto form-control">
+    		<div class="clear">
+	    		<a href="javascript:;" class="pull-left btn-cancel">取消</a>
+	    		<a href="javascript:;" class="pull-left btn-submit btn-phone-submit">提交</a>
+    		</div>
+    	</div>
+    </div>
+
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/zepto.fullpage.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+    	$('.wp-inner').fullpage({
+            afterChange: function (e) {
+	            if ((e.cur+1)===1) {
+	            	$('.fix-right').addClass('hide');
+	            	$('.start').removeClass('hide');
+	            }else{
+	            	$('.fix-right').removeClass('hide');
+	            	$('.start').addClass('hide');
+	            }
+            }
+        });
+        
+    </script>
+    <script type="text/javascript">
+	var overDate = (1000 * 60 * 60 * 24 * 3)+(1000 * 60* 60 * 4)+(1000 * 60 * 16)+(1000 * 55); //截止时间:为当前计算机时间+1天  
+    var NowTime = new Date();  
+    //var EndTime= new Date(2017,2,31,23,59);  //截止时间：为固定时间  月份比实际月份小1的小1
+    var EndTime = new Date(NowTime.getTime() + overDate);
+    var EndTimeMsg = EndTime.getFullYear() + "年";  
+    EndTimeMsg = EndTimeMsg + (EndTime.getMonth() + 1) + "月";  
+    EndTimeMsg = EndTimeMsg + (EndTime.getDate()) + "日"; 
+    EndTimeMsg = EndTimeMsg + (EndTime.getHours()) + "时";  
+    EndTimeMsg = EndTimeMsg + (EndTime.getMinutes()) + "分";  
+    EndTimeMsg = EndTimeMsg + (EndTime.getSeconds()) + "秒"; 
+    var Timest=null;
+      
+    function GetRTime()  
+    {  
+        NowTime = new Date();  
+        var nMS = EndTime.getTime() - NowTime.getTime();  
+        var nD = Math.floor(nMS / (1000 * 60 * 60 * 24));  
+        var nH = Math.floor(nMS / (1000 * 60 * 60)) % 24;  
+        var nM = Math.floor(nMS / (1000 * 60)) % 60;  
+        var nS = Math.floor(nMS / 1000) % 60;  
+        var nMS = Math.floor(nMS / 100) % 10;  
+        var RemainD=document.getElementById("RemainD"),
+            RemainH=document.getElementById("RemainH"),
+            RemainM=document.getElementById("RemainM"),
+            RemainS=document.getElementById("RemainS");
+
+        if (nD >= 0)  
+        {  
+            nD < 10 ? RemainD.innerHTML = '0'+nD : RemainD.innerHTML = nD;
+            nH < 10 ? RemainH.innerHTML = '0'+nH : RemainH.innerHTML = nH;
+            nM < 10 ? RemainM.innerHTML = '0'+nM : RemainM.innerHTML = nM;
+            nS < 10 ? RemainS.innerHTML = '0'+nS : RemainS.innerHTML = nS;
+        }  
+        else {
+            clearTimeout(Timest);  
+        }  
+        Timest=setTimeout("GetRTime()", 100);  
+    }
+    GetRTime();
+	</script>
+</body>
+</html>
+<script language="javascript" src="https://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT99997384&lng=cn"></script>
